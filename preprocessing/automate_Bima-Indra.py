@@ -116,7 +116,7 @@ def preprocess_data(input_filepath, output_filepath=None, save_output=True):
             current_dir = os.path.dirname(os.path.abspath(__file__))
             
             # Nama file output di folder yang sama dengan script ini
-            output_filepath = os.path.join(current_dir, f"{input_name}_preprocessed.csv")
+            output_filepath = os.path.join(current_dir, f"{input_name}_preprocessing.csv")
         
         # Buat folder output jika belum ada
         output_dir = os.path.dirname(output_filepath)
@@ -235,4 +235,5 @@ if __name__ == "__main__":
     print("="*60)
     print(f"Preprocessing completed successfully!")
     print(f"Preprocessed data saved automatically")
+
     print(f"Data ready for model training")
